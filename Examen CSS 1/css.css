@@ -1,11 +1,3 @@
-/* NOTE:
- * Grid layout stuff starts at line 138. 
- * The stuff before is just boring old CSS to make content look not crappy.
- */
-
-/*--------------------------------------------------------------
-CSS Reset
---------------------------------------------------------------*/
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -23,11 +15,6 @@ img {
 	height: auto;
 }
 
-
-/*--------------------------------------------------------------
-Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -57,10 +44,6 @@ Accessibility
 	z-index: 100000; /* Above WP toolbar */
 }
 
-
-/*--------------------------------------------------------------
-Typography
---------------------------------------------------------------*/
 body,
 button,
 input,
@@ -84,9 +67,6 @@ p {
 	padding: 1em 0;
 }
 
-/*--------------------------------------------------------------
-General styles
---------------------------------------------------------------*/
 .site {
 	background: #c9c9c9;
 	min-height: 100vh;
@@ -135,9 +115,6 @@ General styles
 	border-bottom: 1px solid white;
 }
 
-/*--------------------------------------------------------------
-If no grid support, limit width to 50em and center align
---------------------------------------------------------------*/
 @supports not (display: grid) {
 	.site {
 		max-width: 50em;
@@ -145,9 +122,6 @@ If no grid support, limit width to 50em and center align
 	}
 }
 
-/*--------------------------------------------------------------
-CSS Grid layout for wider screens, when browser supports grid:
---------------------------------------------------------------*/
 
 @media screen and (min-width: 600px) {
 	@supports (display: grid) {
